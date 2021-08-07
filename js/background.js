@@ -8,3 +8,6 @@ const bgimg = document.getElementById("to-do_body")
 bgImage.src = `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
+
+
+  
