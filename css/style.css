@@ -1,5 +1,84 @@
 @import "reset.css";
 
+:root {
+  /* color */
+  --white-color : white;
+  --black-color : black;
+
+  /* size */
+  --font-large : 10rem;
+  --font-weight-large : 800;
+  
+  --border-radius-small : 5px;
+
+  /* margin, padding */
+  --margin-small : 10px;
+  --margin-medium : 16px;
+  --margin--large : 26px;
+  --padding-small : 10px;
+  --padding-medium : 16px;
+  --padding-large : 26px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  position: relative;
+}
+
+img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  filter: brightness(70%);
+}
+
 .hidden {
   display: none;
 }
+
+#clock {
+  color: var(--white-color);
+  font-size: var(--font-large);
+  margin-bottom: var(--margin--large);
+}
+
+#quote span {
+  color: var(--white-color);
+}
+
+.login-input, .login-btn {
+  padding: var(--padding-small) var(--padding-medium);
+  border: none;
+  border-radius: var(--border-radius-small);
+}
+
+.login-input {
+  margin: var(--margin-small);
+}
+
+.login-btn {
+  font-weight: var(--font-weight-large);
+}
+
+.login-btn:hover {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  transition: background 0.2s linear;
+}
+
+
